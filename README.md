@@ -3,6 +3,17 @@ Mawkdown is a toy markdown parser written in AWK
 
 It requires GAWK, because it uses the `match` function.
 
+## Try Mawkdown
+Generate html:
+```
+awk -f mawkdown.awk README.md
+```
+
+Or directly open firefox:
+```
+awk -f mawkdown.awk README.md | ./pipefox.sh
+```
+
 ## It supports all of these things
 Now look at this fine `rust` code:
 
