@@ -17,5 +17,5 @@ BEGIN                                    { print "<html><head><title>Mawkdown</t
 match($0, /(.*)\[(.+)\]\((.+)\)(.*)/, u) { _=1; printf("%s<a href='%s'>%s</a>%s", u[1], u[3], u[2], u[4]) }
 !_ && match($0, /(.*)`(.*)`(.*)/, u)     { _=1; printf("%s<code>%s</code>%s", u[1], u[2], u[3]) }
 !_                                       { print $0 }
-!inpre && !inli                          { print "<br/>" }
+/^$/                                     { print "<br/>" }
 END                                      { print "</body></html>" }
