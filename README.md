@@ -12,6 +12,7 @@ printf!("{} + {} = {}", x, x, x + x);
 ```
 
 here's a link to my other project called [digester](https://digester.app?ref=mawkdown).
+this is not the first time I'm having fun with AWK: [awk-jvm](https://github.com/rethab/awk-jvm).
 
 > and here's some quoted text
 > which can span multiple lines
