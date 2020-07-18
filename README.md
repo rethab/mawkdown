@@ -48,6 +48,10 @@ __bold with underscores__
 
 ---
 
+## What does it look like?
+ ![Mawkdown Screensshot](screenshot.png) 
+(note that pipefox does not work with relative images)
+
 ## Limitations
 *basically any line can only contain one thing*
 
