@@ -4,14 +4,19 @@ Mawkdown is a toy markdown parser written in AWK
 It requires GAWK, because it uses the `match` function.
 
 ## Try Mawkdown
-Generate html:
-```
+Generate html from the README:
+```bash
 awk -f mawkdown.awk README.md
 ```
 
-Or directly open firefox:
-```
+Open README in firefox:
+```bash
 awk -f mawkdown.awk README.md | ./pipefox.sh
+```
+
+Or something simpler:
+```bash
+echo -e "# title\n## subtitle" | awk -f mawkdown.awk
 ```
 
 ## It supports all of these things
@@ -47,3 +52,4 @@ __bold with underscores__
 *basically any line can only contain one thing*
 
 - formatting *within* a list does not work
+- langauge-specific formatting
